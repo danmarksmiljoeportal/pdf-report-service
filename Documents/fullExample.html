@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="toc"></div>
+
+    <h1 class="toc-1">I. Primary fields</h1>
+    <p>My name is {$name1}</p>
+    <p>This is price: {$price}</p>
+    <p>Date is: {$date}</p>
+    <img src="{$image1}" />
+	
+    <h1 class="toc-1 page-breack-before">II. Collection</h1>
+    <h2 class="toc-2">1. Simple collection</h2>
+    <p>{$simpleCollection.Title}</p>
+    <ol>
+      {placeholder type="collection" key="$simpleCollection"}
+      <li>{$simpleCollection.Children[index].Title}</li>
+      {/placeholder key="$simpleCollection"}
+    </ol>
+
+    <h2 class="toc-2 page-breack-before">2. Two levels collection</h2>
+    <p>{$twoLevelCollection.Title}</p>
+    <ol>
+      {placeholder type="collection" key="$twoLevelCollection"}
+      <li>{$twoLevelCollection.Children[index].Title}</li>
+      <ol>
+        {placeholder type="collection" key="$twoLevelCollection.Children[index]"}
+        <li>{$twoLevelCollection.Children[index].Children[index].Title}</li>
+        {/placeholder key="$twoLevelCollection.Children[index]"}
+      </ol>
+      {/placeholder key="$twoLevelCollection"}
+    </ol>
+
+    <h2 class="toc-2 page-breack-before">3. Collection with table</h2>
+    {placeholder type="collection" key="$collectionWithTable"}
+    <p>{$collectionWithTable.Title}</h2>
+    <table>
+      <tr>
+        {placeholder type="collection" key="$collectionWithTable.Children[index].Header"}
+        <th>{$collectionWithTable.Children[index]}</th>
+        {/placeholder key="$collectionWithTable.Children[index].Header"}
+      </tr>
+      {placeholder type="collection" key="$collectionWithTable.Children[index]"}
+      <tr>
+        {placeholder type="collection" key="$collectionWithTable.Children[index].Children[index]"}
+        <td>
+          <!-- 'Data' is key -->
+          {$collectionWithTable.Children[index].Children[index].Children[index].Data}
+        </td>
+        {/placeholder key="$collectionWithTable.Children[index].Children[index]"}
+      </tr>
+      {/placeholder key="$collectionWithTable.Children[index]"}
+    </table>
+    {/placeholder key="$collectionWithTable"}
+  </body>
+</html>

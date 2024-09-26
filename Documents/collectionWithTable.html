@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    {placeholder type="collection" key="$collectionWithTable"}
+    <h2>{$collectionWithTable.Title}</h2>
+    <table>
+      <tr>
+        {placeholder type="collection" key="$collectionWithTable.Children[index].Header"}
+        <th>{$collectionWithTable.Children[index]}</th>
+        {/placeholder key="$collectionWithTable.Children[index].Header"}
+      </tr>
+      {placeholder type="collection" key="$collectionWithTable.Children[index]"}
+      <tr>
+        {placeholder type="collection" key="$collectionWithTable.Children[index].Children[index]"}
+        <td>
+          <!-- 'Data' is key -->
+          {$collectionWithTable.Children[index].Children[index].Children[index].Data}
+        </td>
+        {/placeholder key="$collectionWithTable.Children[index].Children[index]"}
+      </tr>
+      {/placeholder key="$collectionWithTable.Children[index]"}
+    </table>
+    {/placeholder key="$collectionWithTable"}
+  </body>
+</html>

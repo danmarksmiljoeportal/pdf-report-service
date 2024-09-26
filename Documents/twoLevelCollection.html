@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>{$twoLevelCollection.Title}</p>
+    <ol>
+      {placeholder type="collection" key="$twoLevelCollection"}
+      <li>{$twoLevelCollection.Children[index].Title}</li>
+      <ol>
+        {placeholder type="collection" key="$twoLevelCollection.Children[index]"}
+        <li>{$twoLevelCollection.Children[index].Children[index].Title}</li>
+        {/placeholder key="$twoLevelCollection.Children[index]"}
+      </ol>
+      {/placeholder key="$twoLevelCollection"}
+    </ol>
+  </body>
+</html>

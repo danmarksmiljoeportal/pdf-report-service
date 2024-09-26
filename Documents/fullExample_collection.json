@@ -1,0 +1,172 @@
+[
+    {
+        "Key": "simpleCollection",
+        "Type": "Collection",
+        "Value": [
+            {
+                "Key": "Title",
+                "Type": "Text",
+                "Value": "Start rendering collection"
+            }
+        ],
+        "Children": [
+            {
+                "Value": [
+                    {
+                        "Key": "Title",
+                        "Value": "Title in children1",
+                        "Type": "text"
+                    }
+                ]
+            },
+            {
+                "Value": [
+                    {
+                        "Key": "Title",
+                        "Value": "Title in children2",
+                        "Type": "text"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Key": "twoLevelCollection",
+        "Value": [
+            {
+                "Key": "Title",
+                "Type": "Text",
+                "Value": "Start rendering collection"
+            }
+        ],
+        "Children": [
+            {
+                "Value": [
+                    {
+                        "Key": "Title",
+                        "Value": "Title in children1",
+                        "Type": "text"
+                    }
+                ],
+                "Children": [
+                    {
+                        "Value": [
+                            {
+                                "Key": "Title",
+                                "Value": "Item 1 in chidren 1",
+                                "Type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "Value": [
+                            {
+                                "Key": "Title",
+                                "Value": "Item 2 in chidren 1",
+                                "Type": "text"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Value": [
+                    {
+                        "Key": "Title",
+                        "Value": "Title in children2",
+                        "Type": "text"
+                    }
+                ],
+                "Children": [
+                    {
+                        "Value": [
+                            {
+                                "Key": "Title",
+                                "Value": "Item 1 in chidren 2",
+                                "Type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "Value": [
+                            {
+                                "Key": "Title",
+                                "Value": "Item 2 in chidren 2",
+                                "Type": "text"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Key": "collectionWithTable",
+        "Type": "Collection",
+        "Value": [
+            {
+                "Key": "Title",
+                "Type": "Text",
+                "Value": "This is table"
+            }
+        ],
+        "Children": [
+            {
+                "Key": "children01",
+                "Type": "collection",
+                "Value": null,
+                "Header": [
+                    {
+                        "Key": "header0",
+                        "Value": "Header 0",
+                        "Type": "text"
+                    },
+                    {
+                        "Key": "header1",
+                        "Value": "Header 1",
+                        "Type": "text"
+                    },
+                    {
+                        "Key": "header2",
+                        "Value": "Header 2",
+                        "Type": "text"
+                    }
+                ],
+                "Children": [
+                    {
+                        "Value": null,
+                        "Children": [
+                            {
+                                "Value": [
+                                    {
+                                        "Key": "Data",
+                                        "Value": "Cell 0",
+                                        "Type": "text"
+                                    }
+                                ]
+                            },
+                            {
+                                "Value": [
+                                    {
+                                        "Key": "Data",
+                                        "Value": "Cell 1",
+                                        "Type": "text"
+                                    }
+                                ]
+                            },
+                            {
+                                "Value": [
+                                    {
+                                        "Key": "Data",
+                                        "Value": "Cell 2",
+                                        "Type": "text"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

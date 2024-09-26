@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>{$simpleCollection.Title}</p>
+    <ol>
+      {placeholder type="collection" key="$simpleCollection"}
+      <li>{$simpleCollection.Children[index].Title}</li>
+      {/placeholder key="$simpleCollection"}
+    </ol>
+  </body>
+</html>
