@@ -45,4 +45,4 @@ the section hidden_value will hide
 
 - `hidden-paragraph`: This parent class controls the visibility of the entire section. It determines whether the section should be shown or hidden based on the content inside its child elements.
 
-- `validate-rule`: This child class contains dynamic content, such as `{$Name}`. If this content is empty or not present, the entire section (i.e., the element with the `hidden-paragraph` class) should be hidden from view.
+- `validate-rule`: This child class contains dynamic content, such as `{{name}}`. If this content is empty or not present, the entire section (i.e., the element with the `hidden-paragraph` class) should be hidden from view.

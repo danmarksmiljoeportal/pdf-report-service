@@ -34,4 +34,4 @@ Stores the basic variable data that can be merged into a template.
 
 ![alt text](/Documents/images/simple-fields-response.png)
 
-In this example, the HTML template includes placeholders `{{name}`, `{{price}}` and `{{$date}}` that will be dynamically replaced with the corresponding values from the payload.
+In this example, the HTML template includes placeholders `{{name}`, `{{price}}` and `{{date}}` that will be dynamically replaced with the corresponding values from the payload.

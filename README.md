@@ -5,7 +5,7 @@
 1. [What is PDF Service?](#what-is-pdf-service)
 2. [How to Use](#how-to-use)
 3. [Input Object](#input-object)
-   - [Primary Field](#primary-field)
+   - [Simple Field](#simple-field)
    - [Collection](#collection)
 4. [Support Generate First Page](#support-generate-first-page)
 5. [Some CSS Classes Support](#some-css-classes-support)
@@ -50,7 +50,7 @@ To generate a PDF, follow these steps:
 
 ### 1. Prepare the HTML Template [here](/Documents/fullExample.html)
 
-**Create the Template:** Start by creating an HTML file that will serve as your template. Use placeholders in the template for dynamic content, utilizing a merge field syntax like `{$key}`.
+**Create the Template:** Start by creating an HTML file that will serve as your template. Use placeholders in the template for dynamic content, utilizing a merge field syntax like `{{key}}`.
 
 **Embed CSS:** Optionally, you can include inline CSS within your HTML to control the styling and layout.
 
@@ -62,8 +62,8 @@ If you need more extensive styling control, prepare an external CSS file. This f
 
 Define the input object that includes all the necessary fields for generating the PDF.
 
-- **Primary Field:** The main content field for the template. [here](/Documents/fullExample_primaryFields.json)
-- **Collection:** A list of data items that can be iterated over in the template. [here](/Documents/fullExample_collection.json)
+- **Simple Field:** The main content field for the template. [here](/Documents/simpleField.json)
+- **Collection:** A list of data items that can be iterated over in the template. [here](/Documents/simpleCollection.json)
 - **Support Generate First Page:** Option to generate an automatic first page based on the content.
 - **CSS Classes Support:** Define and use CSS classes that the service supports.
 
@@ -95,9 +95,9 @@ After pdf file is generated, we will get it by Id via: `https://pdfservice.{env}
 
 | [Input Object](/Documents/docs/Input.md)|
 
-# Primary Field
+# Simple Field
 
-| [Primary Field](/Documents/docs/SimpleFields.md)|
+| [Simple Field](/Documents/docs/SimpleFields.md)|
 
 # Collection
 

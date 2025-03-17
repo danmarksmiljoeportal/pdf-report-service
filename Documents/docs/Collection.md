@@ -40,7 +40,7 @@ Stores grouped or hierarchical data that can be represented as collections.
 
 ![alt text](../images/simple-collection-response.png)
 
-In this example, the template includes a placeholder for iterating through the collection {$simpleCollection}. The collection has a title and contains child items, each with its own title that can be rendered within the list.
+In this example, the template includes a placeholder for iterating through the collection {{simpleCollection}}. The collection has a title and contains child items, each with its own title that can be rendered within the list.
 
 ## 2. Two Levels Collection
 
