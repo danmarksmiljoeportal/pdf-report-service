@@ -82,17 +82,14 @@ If your document requires a Table of Contents (TOC), you can enable this feature
 ### 8. Send a POST Request and return file directly
 
 Once your HTML, CSS and data are ready, send a POST request to the following URL to generate the PDF: `https://pdfservice.{env}.miljoeportal.dk/api/v1/generate-pdf`
-![full request](/Documents/images/full-request.png)
 
 ### 9. Send a POST Request
 
 Once your HTML, CSS and data are ready, send a POST request to the following URL to generate the PDF: `https://pdfservice.{env}.miljoeportal.dk/api/v1/generate-pdf-async`
-![full request](/Documents/images/full-request.png)
 
 ### 10. Get pdf file by Id
 
 After pdf file is generated, we will get it by Id via: `https://pdfservice.{env}.miljoeportal.dk/api/v1/get-pdf/{Id}`
-![alt text](/Documents/images/response.png)
 
 # Input Object
 
@@ -100,7 +97,7 @@ After pdf file is generated, we will get it by Id via: `https://pdfservice.{env}
 
 # Primary Field
 
-| [Primary Field](/Documents/docs/PrimaryFields.md)|
+| [Primary Field](/Documents/docs/SimpleFields.md)|
 
 # Collection
 
