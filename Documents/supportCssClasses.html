@@ -3,8 +3,12 @@
   <body>
     <h1>Example for hidden paragraph</h1>
     <div class="hidden-paragraph">
-      <span>My name is:  </span>
-      <span class="validate-rule">{$Name}</span>
+      <span>My name is: </span>
+      <span class="validate-rule">{{ name }}</span>
+    </div>
+    <div class="hidden-paragraph">
+      <span>This value will not be shown if hidden_value is null: </span>
+      <span class="validate-rule">{{hidden_value}}</span>
     </div>
   </body>
 </html>

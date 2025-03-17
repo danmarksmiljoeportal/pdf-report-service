@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <p>{$twoLevelCollection.Title}</p>
+    Two levels collection with ol and li
     <ol>
-      {placeholder type="collection" key="$twoLevelCollection"}
-      <li>{$twoLevelCollection.Children[index].Title}</li>
+      {{ for item in items}}
       <ol>
-        {placeholder type="collection" key="$twoLevelCollection.Children[index]"}
-        <li>{$twoLevelCollection.Children[index].Children[index].Title}</li>
-        {/placeholder key="$twoLevelCollection.Children[index]"}
+        {{item.name}}
+        <div style="padding-left: 35px">
+          {{ for subItem in item.subItems}}
+          <li>{{ subItem.name}}</li>
+          {{ end }}
+        </div>
+        <br />
       </ol>
-      {/placeholder key="$twoLevelCollection"}
+      {{ end }}
     </ol>
   </body>
 </html>

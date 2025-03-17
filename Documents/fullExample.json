@@ -1,0 +1,26 @@
+{
+  "name": "John Doe",
+  "price": 100.5,
+  "date": "2025-03-17",
+  "image": "https://example.com/image.jpg",
+  "items": [{ "name": "Item 1" }, { "name": "Item 2" }, { "name": "Item 3" }],
+  "itemTwoLevels": [
+    {
+      "subItems": [{ "name": "SubItem 1.1" }, { "name": "SubItem 1.2" }]
+    },
+    {
+      "subItems": [{ "name": "SubItem 2.1" }, { "name": "SubItem 2.2" }]
+    }
+  ],
+  "table": {
+    "header": [
+      { "label": "Column 1", "key": "col1" },
+      { "label": "Column 2", "key": "col2" }
+    ],
+    "data": [
+      { "col1": "Row 1 Col 1", "col2": "Row 1 Col 2" },
+      { "col1": "Row 2 Col 1", "col2": "Row 2 Col 2" }
+    ]
+  },
+  "hidden_value": "Secret Data"
+}

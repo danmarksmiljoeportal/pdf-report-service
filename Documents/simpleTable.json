@@ -1,0 +1,12 @@
+{
+  "table": {
+    "header": [
+      { "label": "Column 1", "key": "col1" },
+      { "label": "Column 2", "key": "col2" }
+    ],
+    "data": [
+      { "col1": "Row 1 Col 1", "col2": "Row 1 Col 2" },
+      { "col1": "Row 2 Col 1", "col2": "Row 2 Col 2" }
+    ]
+  }
+}
