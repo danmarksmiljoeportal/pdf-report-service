@@ -11,6 +11,7 @@
 5. [Some CSS Classes Support](#some-css-classes-support)
 6. [Optional Callback Function](#optional-callback-function)
 7. [Table of Contents Generation](#table-of-contents-generation)
+8. [Response](#response)
 
 ## What is PDF Service?
 
@@ -94,6 +95,10 @@ After pdf file is generated, we will get it by Id via: `https://pdfservice.{env}
 # Input Object
 
 | [Input Object](/Documents/docs/Input.md)|
+
+# Response
+
+| [Response](/Documents/docs/Response.md)|
 
 # Simple Field
 
